@@ -421,31 +421,31 @@ SUB00114         88.5       3.5        2          14         0          HORTON
 [LID_CONTROLS]
 ;;Name           Type/Layer Parameters
 ;;-------------- ---------- ----------
-80               BC
-80               SURFACE    0          0          0.1        1          5         
-80               SOIL       100        0.5        0.2        0.1        0.5        10         3.5       
-80               STORAGE    100        0.75       0.5        0          NO        
-80               DRAIN      0          0.5        6          6          0          0                    
+BC_1             BC
+BC_1             SURFACE    0          0          0.1        1          5         
+BC_1             SOIL       100        0.5        0.2        0.1        0.5        10         3.5       
+BC_1             STORAGE    100        0.75       0.5        0          NO        
+BC_1             DRAIN      0          0.5        6          6          0          0                    
 
-79_2             RG
-79_2             SURFACE    0          0          0.1        1          5         
-79_2             SOIL       100        0.5        0.2        0.1        0.5        10         3.5       
-79_2             STORAGE    100        0.75       0.5        0          NO        
+RG_1             RG
+RG_1             SURFACE    0          0          0.1        1          5         
+RG_1             SOIL       100        0.5        0.2        0.1        0.5        10         3.5       
+RG_1             STORAGE    100        0.75       0.5        0          NO        
 
-79               BC
-79               SURFACE    0          0          0.1        1          5         
-79               SOIL       100        0.5        0.2        0.1        0.5        10         3.5       
-79               STORAGE    100        0.75       0.5        0          NO        
-79               DRAIN      0          0.5        6          6          0          0                    
+BC_2             BC
+BC_2             SURFACE    0          0          0.1        1          5         
+BC_2             SOIL       100        0.5        0.2        0.1        0.5        10         3.5       
+BC_2             STORAGE    100        0.75       0.5        0          NO        
+BC_2             DRAIN      0          0.5        6          6          0          0                    
 
 
 [LID_USAGE]
 ;;Subcatchment   LID Process      Number  Area       Width      InitSat    FromImp    ToPerv     RptFile                  DrainTo          FromPerv  
 ;;-------------- ---------------- ------- ---------- ---------- ---------- ---------- ---------- ------------------------ ---------------- ----------
-SUB00065         80               1       729.29     0          0          0          0          "*"                      *                0
-SUB00079         79_2             1       500        0          0          0          0          "*"                      *                0
-SUB00079         79               1       505        0          0          0          0          "*"                      *                0
-SUB00080         80               1       991.05     0          0          0          0          "*"                      *                0
+SUB00065         BC_1             1       729.29     0          0          0          0          "*"                      *                0
+SUB00079         BC_1             1       500        0          0          0          0          "*"                      *                0
+SUB00079         RG_1             1       505        0          0          0          0          "*"                      *                0
+SUB00080         BC_2             1       991.05     0          0          0          0          "*"                      *                0
 
 [AQUIFERS]
 ;;Name           Por    WP     FC     Ksat   Kslope Tslope ETu    ETs    Seep   Ebot   Egw    Umc    ETupat 
